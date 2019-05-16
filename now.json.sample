@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "alias": "MYHOST-contact-form",
+    "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+    "env": {
+        "MAIL_FROM" : "contact-form@MYHOST.com",
+        "MAIL_TO"   : "contact@MYHOST.com",
+        "SMTP_HOST" : "email-smtp.eu-west-1.amazonaws.com",
+        "SMTP_PORT" : "587",
+        "SMTP_TLS"  : "false",
+        "SMTP_USER" : "@iam-ses-user",
+        "SMTP_PASS" : "@iam-ses-pass",
+        "CORS_ORIGIN" : "*",
+        "CORS_METHODS": "POST"
+    }
+}
