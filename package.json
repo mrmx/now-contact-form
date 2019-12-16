@@ -4,6 +4,7 @@
   "description": "Microservice for processing contact forms via now.sh",
   "author": "Manuel Polo @mrmx",
   "license": "MIT",
+  "engines": { "node": "12.x" },
   "dependencies": {
     "@hapi/joi": "~15.0.3",
     "boom": "~7.3.0",
